@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.istic.univ-rennes1.fr/llp-2022/iagoridcov-leo/sudoku.git
+git remote add origin https://gitlab.istic.univ-rennes1.fr/llp-2022/rio-yohann/sudoku.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.istic.univ-rennes1.fr/llp-2022/iagoridcov-leo/sudoku/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.istic.univ-rennes1.fr/llp-2022/rio-yohann/sudoku/-/settings/integrations)
 
 ## Collaborate with your team
 
