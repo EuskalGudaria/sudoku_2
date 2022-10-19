@@ -1,21 +1,15 @@
-OUTPUT= sudoku
-.PHONY: all clean
+CC=gcc
+CPPFLAGS=
+CFLAGS=
+LDFLAGS=
+OUTPUT=sudoku
+.PHONY: all
 
-all: 
-	@cd src && $(MAKE)
-	@cp -f src/$(OUTPUT) ./
-
-clean: 
-	@cd src && $(MAKE) clean
-	@cd ./
-	@rm -f ${OUTPUT}
-	@rm -f test/${OUTPUT}
-
-test: all
-	@cp -f ${OUTPUT} test/$(OUTPUT)
-	cd test && ./test.sh
-
+all:
+	${CC} ${CFLAGS} -o ${OUTPUT} src/*.c
+clean:
+	rm -f ${OUTPUT} *.o
 help:
-	@echo "all: 	build and execute the whole project"
-	@echo "clean: 	delete all object files"
-	@echo "help: Display the main targets of this Makefile with a short description"
+	@echo "all: Run the whole build of sudoku;"
+	@echo "clean: Remove all files produced by the compilation;"
+	@echo "help: Display the main targets of this Makefile with a short description."
